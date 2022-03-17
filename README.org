@@ -1,0 +1,36 @@
+#+TITLE:   Doom Emacs Configuration
+#+DATE:    March 17, 2022
+#+SINCE:   <replace with next tagged release version>
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+  - [[#in-progress-items][IN-PROGRESS items]]
+
+* Description
+After using and copying =TEC's= config for a loong loong time and facing errors perpetually I have started on this journey of creating my own config files.
+
+Most of the items are still copied from his config but i have segregated everything into separate files and folders and everything is connected via src_elisp{(load! ...)} functions and thus makes it pretty easy to disable sections of code quickly.
+
+I use emacs for following stuff and have a pretty stable setup around these:
++ Org mode
+  - Improved visuals
+  - nice syntax highlighting for src blocks.
+  - =org-noter= to take notes on PDFs
+  - org-brain and org-roam for note taking.
+  - Pretty sweet agenda setup for a very looooog agenda files I regularly update.
+  - TEC's capture minibuffer (pretty sweet with sections and icons)
++ News Reader
+  - a very long list of blogs that I follow.
+  - improved visuals(I think this still needs more work and will be part of later commits)
+  - directly play audio podcasts via =mpd=
+  - directly download or play videos with =youtube-dl=
+
+** IN-PROGRESS items
+
+This endeavor has only just started and there's a lot more to go. After all its a rabbit hole i've jumped into.
+Next in plan items are:
++ Mail in emacs
+  - Mail used to work but this was never stable for me.
++ Coding in emacs
+  - Again this used to work but still always felt a bit iffy.
