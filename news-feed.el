@@ -359,7 +359,7 @@
         :n "v" 'std::elfeed::visit-entry-dwim)
 
 (require 'youtube-dl)
-(setq youtube-dl-directory "/Volumes/Data/Media/Videos/youtube_downloads")
+(setq youtube-dl-directory "/mnt/e/Videos/youtube_downloads")
 
 
 

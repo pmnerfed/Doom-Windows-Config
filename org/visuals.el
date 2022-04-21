@@ -117,6 +117,8 @@
             :results       "🠶"
             :begin_export  "⏩"
             :end_export    "⏪"
+            :begin_example "#"
+            :end_example   "#"
             :properties    "⚙"
             :end           "∎"
             :priority_a   ,(propertize "⚑" 'face 'all-the-icons-red)
@@ -157,6 +159,8 @@
   :header        "#+header:"
   :begin_export  "#+begin_export"
   :end_export    "#+end_export"
+  :begin_example "#+begin_example"
+  :end_example   "#+end_example"
   :results       "#+RESULTS:"
   :property      ":PROPERTIES:"
   :end           ":END:"
@@ -263,3 +267,13 @@ Must be run as part of `org-font-lock-set-keywords-hook'."
       :after org
       :localleader
       :desc "Outline" "O" #'org-ol-tree)
+
+
+(use-package! org-pretty-table
+  :commands (org-pretty-table-mode global-org-pretty-table-mode))
+
+(use-package! org-transclusion
+  :commands org-transclusion-mode
+  :init
+  (map! :after org :map org-mode-map
+        "<f12>" #'org-transclusion-mode))

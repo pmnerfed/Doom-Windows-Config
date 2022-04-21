@@ -51,3 +51,6 @@
 
 (load! "./org/packages.el")
 (load! "./code/packages.el")
+
+(package! youtube-dl)
+(package! modus-themes)

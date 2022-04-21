@@ -47,6 +47,8 @@
 (load! "visuals.el")
 (load! "src-blocks.el")
 (load! "roam.el")
+(load! "brain.el")
+(load! "repetition.el")
 (load! "agenda.el")
 (load! "latex.el")
 (load! "handle-issues.el")

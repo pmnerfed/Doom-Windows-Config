@@ -69,6 +69,10 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+
 (load! "news-feed.el")
 (load! "./org/main.el")
+(load! "./code/main.el")
 (load! "key-bindings.el")
+(load! "wsl.el")
+(load! "grammer.el")
